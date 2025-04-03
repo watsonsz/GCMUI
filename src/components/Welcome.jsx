@@ -15,7 +15,7 @@ export default function Welcome({transferPage}) {
                     
                 </li>
                 <li>
-                    The GitHub link for THIS project is <a className='text-amber-600 hover:text-orange-800 decoration-lime-800 underline' href=""> here</a>
+                    The GitHub link for THIS project is <a className='text-amber-600 hover:text-orange-800 decoration-lime-800 underline' href="https://github.com/watsonsz/GCMUI"> here</a>
                 </li>
             </ul>
             

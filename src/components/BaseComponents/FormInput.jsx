@@ -1,3 +1,4 @@
+import React from 'react';
 export default function FormInput({textarea, label, labelFor, ...props}) {
     const input = textarea ? <textarea className="flex-1 mx-2 p-2 border border-stone-700" {...props}></textarea> : 
                              <input className="flex-1 mx-2 p-2 border border-stone-700 h-10" {...props}/>

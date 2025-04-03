@@ -1,5 +1,5 @@
 import Section from "./Section";
-
+import React from 'react';
 export default function StackedLabel({ elementOne, elementTwo }) {
     return (
         <Section className="flex flex-col place-content-center m-10" override>

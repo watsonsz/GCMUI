@@ -1,3 +1,4 @@
+import React from 'react';
 import Section from "../BaseComponents/Section";
 import FormInput from '../BaseComponents/FormInput';
 import SubmitButton from "../BaseComponents/SubmitButton";

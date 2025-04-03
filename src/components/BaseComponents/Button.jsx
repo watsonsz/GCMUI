@@ -1,3 +1,4 @@
+import React from 'react';
 export default function Button({children, classes = "", selected, override, ...props}) {
     const backgroundColor = selected ? "bg-amber-600" : "bg-orange-800";
     const defaultClasses = `${backgroundColor} hover:bg-amber-600 mx-2 min-w-20 rounded-md `;

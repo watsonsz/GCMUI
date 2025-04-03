@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect, useState, useRef,  } from 'react';
 import Attributes from '../Attributes';
 import FormInput from '../BaseComponents/FormInput';
@@ -214,7 +215,7 @@ export default function ArchetypeForm({...props}) {
                         <SubmitButton type="submit" classes=' h-10'>Submit</SubmitButton>
                     </form>
                 </Section>
-                <Section classes='md:order-1 md:w-1/3'>
+                <Section classes='md:order-1 md:w-1/3' data-testid="fetch-section">
                     <h2 className="text-xl font-bold underline">Archetypes</h2>
                     <ul>
                         {archetypes.map((archetype) => (

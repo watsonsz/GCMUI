@@ -1,3 +1,4 @@
+import React from 'react';
 import FormInput from "./BaseComponents/FormInput";
 
 export default function Attributes({attributeName, attributeChange, attributeValue}){

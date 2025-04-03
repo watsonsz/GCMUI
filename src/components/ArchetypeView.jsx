@@ -1,3 +1,4 @@
+import React from 'react';
 import { useImperativeHandle, useRef } from 'react';
 import StackedLabel from './BaseComponents/StackedLabel';
 import Section from './BaseComponents/Section';

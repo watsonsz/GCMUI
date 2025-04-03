@@ -1,3 +1,4 @@
+import React from 'react';
 import { useImperativeHandle, useRef } from 'react';
 import Button from './Button';
 export default function CustomModal({ref, children}){
