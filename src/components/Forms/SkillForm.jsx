@@ -13,7 +13,7 @@ const baseFormState = {
     relatedAttribute: 1,
     skillType: 0,
 }
-export default function SkillForm({...props}){
+export default function SkillForm({isOpen, ...props}){
     const [skillRequest, setSkillRequest] = useState({...baseFormState});
     const [skills, setSkills]= useState([]);
     const [selectedSkill, setSelectedSkill] = useState();
@@ -38,7 +38,7 @@ export default function SkillForm({...props}){
     async function ViewSkill(id){
         let newSkill = await GetSkill(id);
         setSelectedSkill(newSkill);
-        modal.current.open();
+        //modal.current.open();
     }
 
     async function handleSubmit(event){
@@ -56,7 +56,7 @@ export default function SkillForm({...props}){
             ...prevState,
             ...selectedSkill,
         }));
-        modal.current.close();
+        //modal.current.close();
     }
 
     async function onHandleDelete(id){
@@ -81,7 +81,7 @@ export default function SkillForm({...props}){
     
     return(
         <>
-        <CustomModal ref = {modal}>
+        <CustomModal opened = {isOpen} ref = {modal}>
             <SkillView skill={selectedSkill} onEdit = {onHandleEdit} onDelete={onHandleDelete} />
         </CustomModal>
         <Section>
