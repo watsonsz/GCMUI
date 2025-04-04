@@ -1,4 +1,4 @@
-const URL = "https://142.154.187.169/api/Character/Skill";
+const URL = "https://genesysapi.watsoninterfacing.space/api/Character/Skill";
 
 export async function GetAllSkills(){
     try{
