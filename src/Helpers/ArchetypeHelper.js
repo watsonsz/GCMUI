@@ -1,4 +1,4 @@
-const URL = "https://localhost:7270/api/Character/Archetypes";
+const URL = "https://142.154.187.169:5231/api/Character/Archetypes";
 
 export async function GetAllArchetypes(){
     try{
