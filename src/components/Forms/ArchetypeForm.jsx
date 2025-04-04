@@ -68,7 +68,7 @@ const baseFormState = {
     ]
 };
 
-export default function ArchetypeForm({...props}) {
+export default function ArchetypeForm({isOpen, ...props}) {
     const [archetypeRequest, setInputValue] = useState({...baseFormState});
     const [archetypes, setArchetypes] = useState([]);
     const [selectedArchetype, setSelectedArchetype] = useState();
@@ -143,7 +143,7 @@ export default function ArchetypeForm({...props}) {
     async function ViewArchetype(id){
         let newArchetype = await GetArchetype(id);
         setSelectedArchetype(newArchetype);
-        modal.current.open();
+        //modal.current.open();
         console.log("View archetype: ", newArchetype);
     }
 
@@ -167,7 +167,7 @@ export default function ArchetypeForm({...props}) {
 
     return(
         <>
-            <CustomModal ref={modal}>
+            <CustomModal opened = {isOpen} ref={modal} >
                 <ArchetypeView archetype={selectedArchetype} onEdit = {handleOnEdit} onDelete={HandleDeleteArchetype}/>
             </CustomModal>
             <Section>

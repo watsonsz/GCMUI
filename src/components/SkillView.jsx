@@ -1,3 +1,4 @@
+import React from "react";
 import Section from "./BaseComponents/Section";
 import Button from "./BaseComponents/Button";
 const Attributes = [
