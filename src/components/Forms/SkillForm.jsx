@@ -38,7 +38,7 @@ export default function SkillForm({isOpen, ...props}){
     async function ViewSkill(id){
         let newSkill = await GetSkill(id);
         setSelectedSkill(newSkill);
-        //modal.current.open();
+        modal.current.open();
     }
 
     async function handleSubmit(event){
@@ -56,7 +56,7 @@ export default function SkillForm({isOpen, ...props}){
             ...prevState,
             ...selectedSkill,
         }));
-        //modal.current.close();
+        modal.current.close();
     }
 
     async function onHandleDelete(id){

@@ -143,7 +143,7 @@ export default function ArchetypeForm({isOpen, ...props}) {
     async function ViewArchetype(id){
         let newArchetype = await GetArchetype(id);
         setSelectedArchetype(newArchetype);
-        //modal.current.open();
+        modal.current.open();
         console.log("View archetype: ", newArchetype);
     }
 
