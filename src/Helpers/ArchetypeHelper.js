@@ -1,4 +1,4 @@
-const URL = "https://localhost:7270/api/Character/Archetypes";
+const URL = "https://genesysapi.watsoninterfacing.space/api/Character/Archetypes";
 
 export async function GetAllArchetypes(){
     try{
